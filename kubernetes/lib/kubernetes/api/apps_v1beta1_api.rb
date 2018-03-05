@@ -116,7 +116,7 @@ module Kubernetes
         fail ArgumentError, "Missing the required parameter 'body' when calling AppsV1beta1Api.create_namespaced_deployment"
       end
       # resource path
-      local_var_path = "/apis/apps/v1beta1/namespaces/{namespace}/deployments".sub('{' + 'namespace' + '}', namespace.to_s)
+      local_var_path = "/apis/apps/v1/namespaces/{namespace}/deployments".sub('{' + 'namespace' + '}', namespace.to_s)
 
       # query parameters
       query_params = {}
