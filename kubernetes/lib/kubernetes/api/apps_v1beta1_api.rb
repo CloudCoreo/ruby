@@ -2253,7 +2253,7 @@ module Kubernetes
     # @option opts [String] :pretty If &#39;true&#39;, then the output is pretty printed.
     # @return [V1beta1ControllerRevision]
     def replace_namespaced_controller_revision(name, namespace, body, opts = {})
-      data, _status_code, _headers = (_revision_with_http_info(name, namespace, body, opts)
+      data, _status_code, _headers = _revision_with_http_info(name, namespace, body, opts)
       return data
     end
 
