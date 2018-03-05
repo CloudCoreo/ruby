@@ -2253,7 +2253,7 @@ module Kubernetes
     # @option opts [String] :pretty If &#39;true&#39;, then the output is pretty printed.
     # @return [V1beta1ControllerRevision]
     def replace_namespaced_controller_revision(name, namespace, body, opts = {})
-      data, _status_code, _headers = replace_namespaced_controller_revision_with_http_info(name, namespace, body, opts)
+      data, _status_code, _headers = (_revision_with_http_info(name, namespace, body, opts)
       return data
     end
 
@@ -2352,7 +2352,7 @@ module Kubernetes
         fail ArgumentError, "Missing the required parameter 'body' when calling AppsV1beta1Api.replace_namespaced_deployment"
       end
       # resource path
-      local_var_path = "/apis/apps/v1beta1/namespaces/{namespace}/deployments/{name}".sub('{' + 'name' + '}', name.to_s).sub('{' + 'namespace' + '}', namespace.to_s)
+      local_var_path = "/apis/apps/v1/namespaces/{namespace}/deployments/{name}".sub('{' + 'name' + '}', name.to_s).sub('{' + 'namespace' + '}', namespace.to_s)
 
       # query parameters
       query_params = {}
@@ -2363,7 +2363,7 @@ module Kubernetes
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json', 'application/yaml', 'application/vnd.kubernetes.protobuf'])
       # HTTP header 'Content-Type'
-      header_params['Content-Type'] = @api_client.select_header_content_type(['*/*'])
+      header_params['Content-Type'] = 'application/json' # @api_client.select_header_content_type(['*/*'])
 
       # form parameters
       form_params = {}
