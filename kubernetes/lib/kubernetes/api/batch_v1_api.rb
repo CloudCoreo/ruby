@@ -146,7 +146,7 @@ module Kubernetes
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json', 'application/yaml', 'application/vnd.kubernetes.protobuf'])
       # HTTP header 'Content-Type'
-      header_params['Content-Type'] = @api_client.select_header_content_type(['*/*'])
+      header_params['Content-Type'] = 'application/json'
 
       # form parameters
       form_params = {}
@@ -225,7 +225,7 @@ module Kubernetes
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json', 'application/yaml', 'application/vnd.kubernetes.protobuf'])
       # HTTP header 'Content-Type'
-      header_params['Content-Type'] = @api_client.select_header_content_type(['*/*'])
+      header_params['Content-Type'] = 'application/json'
 
       # form parameters
       form_params = {}
@@ -350,7 +350,7 @@ module Kubernetes
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json', 'application/yaml', 'application/vnd.kubernetes.protobuf', 'application/json;stream=watch', 'application/vnd.kubernetes.protobuf;stream=watch'])
       # HTTP header 'Content-Type'
-      header_params['Content-Type'] = @api_client.select_header_content_type(['*/*'])
+      header_params['Content-Type'] = 'application/json'
 
       # form parameters
       form_params = {}
@@ -432,7 +432,7 @@ module Kubernetes
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json', 'application/yaml', 'application/vnd.kubernetes.protobuf', 'application/json;stream=watch', 'application/vnd.kubernetes.protobuf;stream=watch'])
       # HTTP header 'Content-Type'
-      header_params['Content-Type'] = @api_client.select_header_content_type(['*/*'])
+      header_params['Content-Type'] = 'application/json'
 
       # form parameters
       form_params = {}
@@ -642,7 +642,7 @@ module Kubernetes
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json', 'application/yaml', 'application/vnd.kubernetes.protobuf'])
       # HTTP header 'Content-Type'
-      header_params['Content-Type'] = @api_client.select_header_content_type(['*/*'])
+      header_params['Content-Type'] = 'application/json'
 
       # form parameters
       form_params = {}
@@ -706,7 +706,7 @@ module Kubernetes
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json', 'application/yaml', 'application/vnd.kubernetes.protobuf'])
       # HTTP header 'Content-Type'
-      header_params['Content-Type'] = @api_client.select_header_content_type(['*/*'])
+      header_params['Content-Type'] = 'application/json'
 
       # form parameters
       form_params = {}
@@ -776,7 +776,7 @@ module Kubernetes
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json', 'application/yaml', 'application/vnd.kubernetes.protobuf'])
       # HTTP header 'Content-Type'
-      header_params['Content-Type'] = @api_client.select_header_content_type(['*/*'])
+      header_params['Content-Type'] = 'application/json'
 
       # form parameters
       form_params = {}
@@ -846,7 +846,7 @@ module Kubernetes
       # HTTP header 'Accept' (if needed)
       header_params['Accept'] = @api_client.select_header_accept(['application/json', 'application/yaml', 'application/vnd.kubernetes.protobuf'])
       # HTTP header 'Content-Type'
-      header_params['Content-Type'] = @api_client.select_header_content_type(['*/*'])
+      header_params['Content-Type'] = 'application/json'
 
       # form parameters
       form_params = {}
