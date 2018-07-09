@@ -11,5 +11,5 @@ Swagger Codegen version: 2.2.3
 =end
 
 module Kubernetes
-  VERSION = "1.0.0-alpha1"
+  VERSION = "1.0.1"
 end
